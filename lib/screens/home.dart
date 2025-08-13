@@ -25,12 +25,17 @@ class HomePage extends StatelessWidget {
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.w500,
-                    fontSize: 26,
+                    fontSize: 25,
                   ),
                 ),
-                ElevatedButton(onPressed: (){}, child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                  child: Text('Get Started', style: TextStyle(color: AppColors.black ,fontSize: 18, fontWeight: FontWeight.w500),),
+                ElevatedButton(
+                  style: ButtonStyle(
+                    backgroundColor:  WidgetStateProperty.all(AppColors.white),
+                    padding: WidgetStateProperty.all(EdgeInsets.symmetric(vertical: 10, horizontal: 18))
+                  ),
+                    onPressed: (){}, child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 18.0),
+                  child: Text('Get Started', style: TextStyle(color: AppColors.black ,fontSize: 16, fontWeight: FontWeight.w500),),
                 )),
               ],
             ),
