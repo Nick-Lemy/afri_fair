@@ -131,7 +131,7 @@ class _LoginPageState extends State<LoginPage> {
                               ),
                             ),
                             onPressed: () {
-                              Navigator.pushNamed(context, '/login');
+                              Navigator.pushNamed(context, '/main');
                             },
                             child: Text(
                               'Login',
@@ -166,7 +166,7 @@ class _LoginPageState extends State<LoginPage> {
                               ),
                             ),
                             onPressed: () {
-                              Navigator.pushNamed(context, '/login');
+                              Navigator.pushNamed(context, '/main');
                             },
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
