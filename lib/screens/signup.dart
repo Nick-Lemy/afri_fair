@@ -13,10 +13,9 @@ class _SignUpPageState extends State<SignUpPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20),
+        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
         child: Center(
           child: Column(
-
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Column(
@@ -181,7 +180,10 @@ class _SignUpPageState extends State<SignUpPage> {
                                 AppColors.purple,
                               ),
                               padding: WidgetStateProperty.all(
-                                EdgeInsets.symmetric(vertical: 7, horizontal: 20),
+                                EdgeInsets.symmetric(
+                                  vertical: 7,
+                                  horizontal: 20,
+                                ),
                               ),
                               shape: WidgetStateProperty.all(
                                 RoundedRectangleBorder(
@@ -213,7 +215,10 @@ class _SignUpPageState extends State<SignUpPage> {
                                 AppColors.white,
                               ),
                               padding: WidgetStateProperty.all(
-                                EdgeInsets.symmetric(vertical: 7, horizontal: 20),
+                                EdgeInsets.symmetric(
+                                  vertical: 7,
+                                  horizontal: 20,
+                                ),
                               ),
                               shape: WidgetStateProperty.all(
                                 RoundedRectangleBorder(
@@ -244,19 +249,25 @@ class _SignUpPageState extends State<SignUpPage> {
                           ),
                         ),
                       ],
-                    )
+                    ),
                   ],
                 ),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text('Already have an account?'),
-                  TextButton(onPressed: (){
-                    Navigator.pushNamed(context, '/login');
-                  },child: Text('Login')),
+                  Text('Already have an account?',  style: TextStyle(color: AppColors.black, fontWeight: FontWeight.normal, fontSize: 14),),
+                  TextButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/login');
+                    },
+                    child: Text(
+                      'Login',
+                      style: TextStyle(color: Color(0xFF1976D2), fontWeight: FontWeight.normal, fontSize: 14),
+                    ),
+                  ),
                 ],
-              )
+              ),
             ],
           ),
         ),
