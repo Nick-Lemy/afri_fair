@@ -1,4 +1,5 @@
 import 'package:afri_fair/screens/home.dart';
+import 'package:afri_fair/screens/login.dart';
 import 'package:afri_fair/screens/signup.dart';
 import 'package:flutter/material.dart';
 
@@ -21,7 +22,8 @@ class MyApp extends StatelessWidget {
         initialRoute: '/',
         routes: {
           '/': (context) => HomePage(),
-          '/signup': (context) => SignUpPage()
+          '/signup': (context) => SignUpPage(),
+          '/login': (context) => LoginPage()
         },
     );
   }
