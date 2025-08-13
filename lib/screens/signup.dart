@@ -16,8 +16,8 @@ class _SignUpPageState extends State<SignUpPage> {
         padding: EdgeInsets.symmetric(horizontal: 20),
         child: Center(
           child: Column(
-            spacing: 15,
-            mainAxisAlignment: MainAxisAlignment.center,
+
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Column(
                 children: [
@@ -25,13 +25,13 @@ class _SignUpPageState extends State<SignUpPage> {
                     'Welcome to AfriFair !',
                     style: TextStyle(
                       color: AppColors.black,
-                      fontSize: 30,
+                      fontSize: 24,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   Text(
                     'Sign up for Free',
-                    style: TextStyle(color: AppColors.black, fontSize: 19),
+                    style: TextStyle(color: AppColors.black, fontSize: 18),
                   ),
                 ],
               ),
@@ -42,7 +42,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   color: AppColors.purpleAccented,
                 ),
                 child: Column(
-                  spacing: 20,
+                  spacing: 10,
                   children: [
                     // Name Input
                     Column(
@@ -53,7 +53,7 @@ class _SignUpPageState extends State<SignUpPage> {
                           'Name',
                           style: TextStyle(
                             fontWeight: FontWeight.normal,
-                            fontSize: 16,
+                            fontSize: 14,
                           ),
                         ),
                         TextField(
@@ -84,7 +84,7 @@ class _SignUpPageState extends State<SignUpPage> {
                           'Email',
                           style: TextStyle(
                             fontWeight: FontWeight.normal,
-                            fontSize: 16,
+                            fontSize: 14,
                           ),
                         ),
                         TextField(
@@ -95,7 +95,7 @@ class _SignUpPageState extends State<SignUpPage> {
                             filled: true,
                             fillColor: AppColors.white,
                             contentPadding: EdgeInsets.symmetric(
-                              vertical: 10,
+                              vertical: 7,
                               horizontal: 15,
                             ),
                             border: OutlineInputBorder(
@@ -115,7 +115,7 @@ class _SignUpPageState extends State<SignUpPage> {
                           'Password',
                           style: TextStyle(
                             fontWeight: FontWeight.normal,
-                            fontSize: 16,
+                            fontSize: 14,
                           ),
                         ),
                         TextField(
@@ -126,7 +126,7 @@ class _SignUpPageState extends State<SignUpPage> {
                             filled: true,
                             fillColor: AppColors.white,
                             contentPadding: EdgeInsets.symmetric(
-                              vertical: 10,
+                              vertical: 7,
                               horizontal: 15,
                             ),
                             border: OutlineInputBorder(
@@ -146,7 +146,7 @@ class _SignUpPageState extends State<SignUpPage> {
                           'Confirm Password',
                           style: TextStyle(
                             fontWeight: FontWeight.normal,
-                            fontSize: 16,
+                            fontSize: 14,
                           ),
                         ),
                         TextField(
@@ -157,7 +157,7 @@ class _SignUpPageState extends State<SignUpPage> {
                             filled: true,
                             fillColor: AppColors.white,
                             contentPadding: EdgeInsets.symmetric(
-                              vertical: 10,
+                              vertical: 2,
                               horizontal: 15,
                             ),
                             border: OutlineInputBorder(
@@ -181,7 +181,7 @@ class _SignUpPageState extends State<SignUpPage> {
                                 AppColors.purple,
                               ),
                               padding: WidgetStateProperty.all(
-                                EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                                EdgeInsets.symmetric(vertical: 7, horizontal: 20),
                               ),
                               shape: WidgetStateProperty.all(
                                 RoundedRectangleBorder(
@@ -198,7 +198,7 @@ class _SignUpPageState extends State<SignUpPage> {
                               'Sign Up',
                               style: TextStyle(
                                 color: AppColors.white,
-                                fontSize: 16,
+                                fontSize: 14,
                                 fontWeight: FontWeight.normal,
                               ),
                             ),
@@ -213,7 +213,7 @@ class _SignUpPageState extends State<SignUpPage> {
                                 AppColors.white,
                               ),
                               padding: WidgetStateProperty.all(
-                                EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                                EdgeInsets.symmetric(vertical: 7, horizontal: 20),
                               ),
                               shape: WidgetStateProperty.all(
                                 RoundedRectangleBorder(
@@ -235,7 +235,7 @@ class _SignUpPageState extends State<SignUpPage> {
                                   'Sign up with Google',
                                   style: TextStyle(
                                     color: AppColors.black,
-                                    fontSize: 16,
+                                    fontSize: 14,
                                     fontWeight: FontWeight.normal,
                                   ),
                                 ),
@@ -251,7 +251,7 @@ class _SignUpPageState extends State<SignUpPage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text('Aready have an account?'),
+                  Text('Already have an account?'),
                   TextButton(onPressed: (){
                     Navigator.pushNamed(context, '/login');
                   },child: Text('Login')),
