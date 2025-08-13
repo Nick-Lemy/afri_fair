@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, '/login');
+                    Navigator.pushNamed(context, '/signup');
                   },
                   child: Container(
                     padding: const EdgeInsets.symmetric(horizontal: 18.0),
